@@ -1,12 +1,13 @@
+
 <suite name="GroceryApplication" parallel="tests" thread-count="1">
 	<test name="chromeTest">
-		<listeners>
+		<!-- <listeners>
 			<listener class-name="utilities.RetryListener" />
 			<listener class-name="utilities.ExtenetReport" />
-		</listeners>
+		</listeners> -->
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			<class name="testCase.ManageNewsTest"></class>
+			<class name="testCase.ManageSliderTest"></class>
 		</classes>
 	</test>
 </suite>

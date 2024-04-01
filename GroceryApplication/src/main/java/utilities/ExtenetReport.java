@@ -58,7 +58,6 @@ public class ExtenetReport implements ITestListener {
 			String failureReason = result.getThrowable().getMessage();
 			test.log(Status.FAIL, "Failure Reason: " + failureReason);
 			test.fail(result.getThrowable());
-			 test.addScreenCaptureFromPath( System.getProperty("user.dir") + "\\OutputScreenshots\\" + result.getName() +  ".png");
 			}}
 
 	public void onTestSkipped(ITestResult result) {
