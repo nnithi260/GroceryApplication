@@ -1,4 +1,3 @@
-
 <suite name="GroceryApplication" parallel="tests" thread-count="1">
 	<test name="chromeTest">
 		<!-- <listeners>
@@ -7,7 +6,7 @@
 		</listeners> -->
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			<class name="testCase.ManageSliderTest"></class>
+			<class name="testCase.manageDeliveryBoyTest"></class>
 		</classes>
 	</test>
 </suite>

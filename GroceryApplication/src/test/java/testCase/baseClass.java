@@ -48,11 +48,12 @@ public class baseClass {
 
   @AfterMethod(alwaysRun = true)
 	public void afterMethode(ITestResult iTestResult) throws IOException {
+	  if (driver != null) {
 		if (iTestResult.getStatus() == ITestResult.FAILURE) {
 			sc = new ScreenShotCapture();
 			sc.captureFailureScreenShot(driver, iTestResult.getName());
 		}
 		driver.quit();
 	}
-
+  }
 }

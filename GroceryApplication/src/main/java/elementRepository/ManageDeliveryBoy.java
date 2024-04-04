@@ -40,7 +40,7 @@ public class ManageDeliveryBoy {
 		manageDeliveryMoreInfo.click();
 	}
 	public void addDeliveryBoy() {
-		addNewDeliveryBoy.click();
+		gu.click(driver, addNewDeliveryBoy);
 	}
 	public void enterName() {
 		enterName.sendKeys("happy"+gu.generateCurrentDateAndTime());

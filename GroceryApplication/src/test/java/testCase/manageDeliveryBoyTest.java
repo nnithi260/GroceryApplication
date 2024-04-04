@@ -7,8 +7,10 @@ import constant1.Constant;
 import elementRepository.HomePage;
 import elementRepository.LoginPage;
 import elementRepository.ManageDeliveryBoy;
+import utilities.GeneralUtilities;
 
 public class manageDeliveryBoyTest extends baseClass {
+	GeneralUtilities gu= new GeneralUtilities();
 	LoginPage lp;
 	ManageDeliveryBoy mdb;
 	HomePage hp;
@@ -33,7 +35,7 @@ public class manageDeliveryBoyTest extends baseClass {
 		mdb.saveButtonOp();
 		mdb.readAlertMsg();
 		String expected1=mdb.readFromTableName();
-		String actual1="happykuttan11";
+		String actual1="happy"+gu.generateCurrentDateAndTime();
 		Assert.assertEquals(actual1,expected1,Constant.lp_verifyLogInWithInValidData);
 		
   }
